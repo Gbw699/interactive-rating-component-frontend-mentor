@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+// font-family: "Overpass", serif;
+// font-optical-sizing: auto;
+// font-weight: 400 - 700;
+// font-style: normal;
+
+$Mobile: 375px;
+$Desktop: 1440px;
+
+$Orange: hsl(25, 97%, 53%);
+
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+// $Font size (paragraph): 15px
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
