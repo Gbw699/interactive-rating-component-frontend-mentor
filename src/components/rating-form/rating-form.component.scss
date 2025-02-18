@@ -1,0 +1,48 @@
+@use "styles" as s;
+@use "mixins" as m;
+// @use "styles" as s;
+
+.container {
+  @include m.container();
+  .star-icon {
+    padding: 0.8rem;
+    border-radius: 100%;
+    background-color: rgba($color: s.$White, $alpha: 0.05);
+  }
+  .title {
+    color: s.$White;
+  }
+  .text {
+    color: rgba($color: s.$LightGrey, $alpha: 0.8);
+    line-height: 23px;
+  }
+  .btn-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    .item {
+      display: flex;
+      padding: 0.8rem;
+      border-radius: 100%;
+      background-color: rgba($color: s.$White, $alpha: 0.05);
+      .btn {
+        font-weight: 700;
+        color: rgba($color: s.$LightGrey, $alpha: 0.8);
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+  .submit-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: s.$VeryDarkBlue;
+    background-color: s.$Orange;
+  }
+}

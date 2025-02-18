@@ -1,3 +1,4 @@
+@use "mixins" as m;
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 // font-family: "Overpass", serif;
 // font-optical-sizing: auto;
@@ -21,4 +22,16 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: "Overpass", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  background-color: $VeryDarkBlue;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

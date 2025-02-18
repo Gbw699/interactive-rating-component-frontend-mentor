@@ -1,0 +1,32 @@
+<article class="container">
+  <img
+    class="star-icon"
+    src="./images/icon-star.svg"
+    alt="A star icon that indicate that this is a rating component"
+  />
+  <h2 class="title">How did we do?</h2>
+  <p class="text">
+    Please let us know we did with your support request. All feedback is
+    appreciated to help us improve our offering!
+  </p>
+  <ul class="btn-list">
+    <li class="item" (click)="setRating($event)">
+      <button class="btn" type="button">1</button>
+    </li>
+    <li class="item" (click)="setRating($event)">
+      <button class="btn" type="button">2</button>
+    </li>
+    <li class="item" (click)="setRating($event)">
+      <button class="btn" type="button">3</button>
+    </li>
+    <li class="item" (click)="setRating($event)">
+      <button class="btn" type="button">4</button>
+    </li>
+    <li class="item" (click)="setRating($event)">
+      <button class="btn" type="button">5</button>
+    </li>
+  </ul>
+  <button class="submit-btn" type="submit" (click)="submitRating()">
+    SUBMIT
+  </button>
+</article>
