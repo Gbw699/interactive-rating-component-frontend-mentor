@@ -1,6 +1,5 @@
 @use "styles" as s;
 @use "mixins" as m;
-// @use "styles" as s;
 
 .container {
   @include m.container();
@@ -10,11 +9,10 @@
     background-color: rgba($color: s.$White, $alpha: 0.05);
   }
   .title {
-    color: s.$White;
+    @include m.title();
   }
   .text {
-    color: rgba($color: s.$LightGrey, $alpha: 0.8);
-    line-height: 23px;
+    @include m.text();
   }
   .btn-list {
     display: flex;

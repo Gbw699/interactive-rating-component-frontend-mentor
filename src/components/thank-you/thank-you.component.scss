@@ -1,0 +1,30 @@
+@use "styles" as s;
+@use "mixins" as m;
+
+.container {
+  @include m.container();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .rating-container {
+    margin-top: 2rem;
+    color: s.$Orange;
+    border-radius: 2rem;
+    background-color: rgba($color: s.$White, $alpha: 0.05);
+    padding: 0.7rem;
+    .selected-rating {
+      margin: 0;
+      height: 1rem;
+    }
+  }
+  .title {
+    @include m.title();
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .text {
+    @include m.text();
+    text-align: center;
+    margin: 0;
+  }
+}

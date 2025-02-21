@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
+import { RatingService } from '../../services/rating.service';
+
 @Component({
   selector: 'app-rating-form',
   standalone: true,
@@ -9,7 +11,9 @@ import { FormControl } from '@angular/forms';
   styleUrl: './rating-form.component.scss',
 })
 export class RatingFormComponent {
-  selectedRating = new FormControl('');
+  selectedRating: FormControl<string | null> = new FormControl<string>('');
+
+  constructor(private ratingServcie: RatingService) {}
 
   setRating(event: MouseEvent) {
     const target = event.target as HTMLElement;
@@ -18,6 +22,6 @@ export class RatingFormComponent {
   }
 
   submitRating() {
-    console.log(this.selectedRating.value);
+    this.ratingServcie.setRating(this.selectedRating.value);
   }
 }

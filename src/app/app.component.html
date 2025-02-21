@@ -1,2 +1,5 @@
+@if (selectedRating() === "") {
 <app-rating-form></app-rating-form>
-<!-- <app-thank-you></app-thank-you> -->
+} @else {
+<app-thank-you></app-thank-you>
+}
