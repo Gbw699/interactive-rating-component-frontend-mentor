@@ -1,6 +1,25 @@
+$Mobile: 375px;
+$Desktop: 1440px;
+
+$Orange: hsl(25, 97%, 53%);
+
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
 @mixin container {
-  background-color: hsl(213, 19%, 18%);
+  background-color: $DarkBlue;
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   border-radius: 15px;
+}
+
+@mixin title {
+  color: $White;
+}
+
+@mixin text {
+  color: rgba($color: $LightGrey, $alpha: 0.8);
+  line-height: 23px;
 }
