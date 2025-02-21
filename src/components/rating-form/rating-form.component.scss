@@ -24,6 +24,12 @@
       padding: 0.8rem;
       border-radius: 100%;
       background-color: rgba($color: s.$White, $alpha: 0.05);
+      &:hover {
+        background-color: s.$White;
+        .btn {
+          color: s.$VeryDarkBlue;
+        }
+      }
       .btn {
         font-weight: 700;
         color: rgba($color: s.$LightGrey, $alpha: 0.8);
@@ -42,5 +48,8 @@
     letter-spacing: 2px;
     color: s.$VeryDarkBlue;
     background-color: s.$Orange;
+    &:hover {
+      background-color: s.$White;
+    }
   }
 }
