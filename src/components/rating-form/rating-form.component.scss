@@ -24,17 +24,26 @@
       padding: 0.8rem;
       border-radius: 100%;
       background-color: rgba($color: s.$White, $alpha: 0.05);
-      &:hover {
-        background-color: s.$White;
-        .btn {
-          color: s.$VeryDarkBlue;
+      transition: all 0.1s;
+      @media (min-width: 50rem) {
+        &:hover {
+          background-color: s.$White;
+          .btn {
+            color: s.$VeryDarkBlue;
+          }
         }
       }
       .btn {
         font-weight: 700;
-        color: rgba($color: s.$LightGrey, $alpha: 0.8);
+        color: rgba($color: s.$LightGrey, $alpha: 1);
         background-color: transparent;
         border: none;
+      }
+    }
+    .selected-item {
+      background-color: s.$Orange;
+      .btn {
+        color: s.$VeryDarkBlue;
       }
     }
   }
@@ -48,6 +57,11 @@
     letter-spacing: 2px;
     color: s.$VeryDarkBlue;
     background-color: s.$Orange;
+    transition: all 0.1s;
+    font-family: "Overpass", serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-size-adjust: auto;
     &:hover {
       background-color: s.$White;
     }

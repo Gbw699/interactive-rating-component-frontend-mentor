@@ -13,13 +13,26 @@ $VeryDarkBlue: hsl(216, 12%, 8%);
   margin: 1rem;
   padding: 2rem 1.5rem;
   border-radius: 15px;
+  max-width: 340px;
+  animation: fadeIn 1s;
 }
 
 @mixin title {
   color: $White;
+  margin-bottom: 0.5rem;
 }
 
 @mixin text {
-  color: rgba($color: $LightGrey, $alpha: 0.8);
+  margin: 1rem 0;
+  color: rgba($color: $LightGrey, $alpha: 1);
   line-height: 23px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
